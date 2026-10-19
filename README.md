@@ -1,21 +1,16 @@
 # Still Dell: Monorepo · Cloudflare (protected)
 
-> **This is a template, not a repository.** Copy it out and prepare it before an eval (steps below).
-> Nothing here is deployed.
-
 A monorepo with three apps on **Cloudflare**, with preview links **behind Cloudflare Access**. Static Vite +
 TypeScript, no framework. The page reads a live list from the shared Supabase test project.
 Row in the support matrix: impeccable-reviews#302.
 
 ## Deployment links
 
-Filled in at prep time.
-
 | App | Folder | Production | Preview gate |
 |---|---|---|---|
-| _app one_ | `apps/<app>` | _not deployed_ | yes |
-| _app two_ | `apps/<app>` | _not deployed_ | yes |
-| _app three_ | `apps/<app>` | _not deployed_ | yes |
+| poppy-c4n | `apps/poppy-c4n` | https://still-dell-r8x2-poppy-c4n.pages.dev | yes: Cloudflare Access on `*.still-dell-r8x2-poppy-c4n.pages.dev` |
+| sorrel-m8d | `apps/sorrel-m8d` | https://still-dell-r8x2-sorrel-m8d.pages.dev | yes: Cloudflare Access on `*.still-dell-r8x2-sorrel-m8d.pages.dev` |
+| umber-t1x | `apps/umber-t1x` | https://still-dell-r8x2-umber-t1x.pages.dev | yes: Cloudflare Access on `*.still-dell-r8x2-umber-t1x.pages.dev` |
 
 ## Names
 
