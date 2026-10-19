@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poppy · Test drive</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      .mark { font-weight: 700; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      header a { color: #2f7d4f; font-size: 10px; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3.25rem); margin: 3rem 1rem 1rem;
+        background: linear-gradient(90deg, #2f7d4f, #d94f8a);
+        -webkit-background-clip: text; background-clip: text;
+        color: transparent; -webkit-text-fill-color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .edge { margin: 0; padding: 0; line-height: 1.5; }
+      /* Intentional, for Impeccable's test drive: light grey text, well under 4.5:1 contrast. */
+      .quiet { color: #c9c9c4; margin: 1rem; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .bar { height: 0.5rem; width: 30%; margin: 1rem; background: #2f7d4f; border-radius: 0.25rem; transition: width 0.3s; }
+      .bar:hover { width: 80%; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Poppy</span>
+      <a href="/">Back to the front door</a>
+    </header>
+    <main>
+      <h1>A test drive of Poppy</h1>
+      <p class="edge">This page only exists to show Impeccable reviewing a change to Poppy; it carries a few small design flaws on purpose.</p>
+      <p class="quiet">Nothing here is meant to ship. Close the pull request when you are done.</p>
+      <div class="bar" role="presentation"></div>
+    </main>
+    <footer>Poppy · a test site for Impeccable reviews</footer>
+  </body>
+</html>
